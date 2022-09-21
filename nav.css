@@ -1,0 +1,203 @@
+.wrapper {
+  height: 5.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid var(--bg-primary);
+  background: rgba(255, 255, 255, 1);
+
+}
+
+
+.page-head {
+  display: flex;
+  align-items: center;
+  /* Makes the nav items and logo appear vertically centered with the search box*/
+  background: rgba(255, 255, 255, 0.9);
+
+}
+
+.logo {
+  /* Prevent logo from shrinking 
+     so it doesn't collide when window gets narrow. */
+  margin-right: 7.2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  margin: 0 1rem;
+  flex-grow: 1;
+  /* <-- THE SECRET SAUCE! */
+
+  min-width: 1rem;
+}
+
+.search-box {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  height: 3rem;
+  font-size: large;
+  outline: none;
+
+}
+
+
+
+
+.site-nav>ul {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+
+}
+
+.site-nav .search-mic-hide {
+  display: none;
+}
+
+.site-nav__item {
+  /* Prevent nav items from shrinking 
+     so they won't collide when window gets narrow. */
+  flex-shrink: 0;
+  list-style-type: none;
+  margin: 0 .55rem;
+  cursor: pointer;
+  /* Prevent multi-word nav items from wrapping. */
+  white-space: nowrap;
+}
+
+
+button {
+  height: 3rem;
+  position: absolute;
+  width: 5rem;
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  border-left: none;
+  cursor: pointer;
+  background-color: rgb(225, 225, 225, 0.5);
+  opacity: 0.8;
+
+}
+
+
+.circle-border {
+
+  background-color: rgba(232, 232, 232, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 5.5rem;
+
+}
+
+
+.circle-border:active {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.input-search-wrap {
+  width: 35vw;
+}
+
+.input-search-wrap-1 {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+/* heading 2 */
+
+
+.heading-2 {
+  position: fixed;
+  top: 5.5rem;
+  height: 4.2rem;
+  width: 100vw;
+  border-bottom: 1px solid var(--bg-primary);
+  display: flex;
+  z-index: 0;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  margin-left: 5rem;
+  overflow-x: hidden;
+
+}
+
+
+
+.heading-2 .h-2 {
+  background-color: var(--bg-primary);
+  min-width: fit-content;
+  min-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  background-color: var(--button-primary);
+  margin-left: 1rem;
+  border: 0.8px solid rgba(184, 183, 183, 0.5);
+}
+
+
+.heading-2 .h-2:not(.firstchild):hover {
+  background-color: rgba(197, 194, 194, 0.4);
+
+}
+
+
+.heading-2 a:nth-child(2) {
+  margin-left: 2rem;
+  background-color: black;
+  color: white;
+}
+
+.heading-2 .arrow-btn {
+
+  height: 4.2rem;
+  background-color: white;
+  opacity: 1;
+  border: none;
+
+
+}
+
+
+.heading-2 .arrow-btn.btn-right {
+  position: fixed;
+  right: 0;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0.1) 100%);
+  cursor: unset;
+}
+
+.heading-2 .arrow-btn.btn-left {
+  cursor: unset;
+  display: none;
+  position: fixed;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.heading-2 .arrow-btn.btn-left span {
+  cursor: pointer;
+}
+
+.heading-2 .arrow-btn.btn-right span {
+  cursor: pointer;
+}

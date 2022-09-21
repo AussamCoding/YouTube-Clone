@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap');
+
+
+:root {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  --text-primary: black;
+  --bg-primary: #e8e8e8;
+  --button-primary: rgb(225, 225, 225, 0.5);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+
+
+main {
+  margin-left: 6rem;
+  margin-top: 11rem;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+
+
+}
+
+.container {
+  margin-top: 11rem;
+  margin-left: 5px;
+}
+
+.navbar {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 5rem;
+  width: 5rem;
+  height: 100vh;
+  z-index: 10;
+}
+
+
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: black;
+
+}
+
+.nav-link .link-text {
+  display: flex;
+  justify-content: center;
+
+}
+
+.nav-link .material-icons {
+  padding-bottom: 0.5rem;
+  margin-left: 1.2rem;
+}
+
+.nav-link:hover {
+  background-color: rgba(242, 242, 242, 0.7);
+
+}
+
+
+.me {
+  cursor: pointer;
+}
+
+
+ul .hidden-list {
+  display: none;
+}
+
+
+.menu-position {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+}
+
+.menu-position a {
+  cursor: unset;
+}
+
+.menu-position a:active {
+  border-radius: 100%;
+  background: rgba(232, 232, 232, 0.5);
+  padding: 0.4rem;
+  color: black;
+
+
+}
+
+
+
+header .search-btn:hover {
+  border: .5px solid rgba(128, 124, 124, 0.5);
+  background-color: rgba(197, 194, 194, 0.4);
+  opacity: 0.8;
+
+}
+
+
+
+
+/* Checkbox-menu */
+
+.h-menu {
+
+  display: none;
+}
+
+
+
+
+
+input:checked+.navbar {
+  width: 18rem;
+  /* overflow-x: hidden;
+  overflow-y: auto; */
+}
+
+
+
+
+
+input:checked+.navbar:hover {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+
+
+input:checked+.navbar .nav-link {
+  width: 96%;
+
+}
+
+
+
+
+
+
+input:checked+nav li:nth-child(5) {
+  display: none;
+
+}
+
+input:checked+nav .link-text {
+  display: none;
+}
+
+input:checked+nav .nav-link {
+  height: 3.5rem;
+  padding: 1rem 0;
+}
+
+
+input:checked+nav .navbar-nav .fhome {
+  background-color: var(--bg-primary);
+}
+
+
+input:checked+nav li:nth-child(1) .nav-link::after {
+  content: "Home";
+  position: absolute;
+  left: 5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(2) .nav-link::after {
+  content: "Explore";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(3) .nav-link::after {
+  content: "Trending";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(4) .nav-link::after {
+  content: "Subscriptions";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(5) .nav-link::after {
+  content: "library";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav ul .hidden-list {
+  display: block;
+}
+
+input:checked+nav li:nth-child(6) {
+  border-top: 2px solid var(--bg-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:checked+nav li:nth-child(7) .nav-link::after {
+  content: "Library";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(8) .nav-link::after {
+  content: "History";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(9) .nav-link::after {
+  content: "Your videos";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(10) .nav-link::after {
+  content: "Watch later";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(11) .nav-link::after {
+  content: "Liked videos";
+  position: absolute;
+  left: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+input:checked+nav li:nth-child(12) {
+  border-top: 2px solid var(--bg-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.scroller::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+  background: rgb(255, 255, 255);
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: #7b7b78;
+  /* background: transparent; */
+  -webkit-border-radius: 1em;
+}
+
+
+
+
+
+/* body::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+  background: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #7b7b78;
+  -webkit-border-radius: 1em;
+} */
+
+
+
+
+
+/* .scroller {
+  width: 300px;
+  height: 100px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+} */
+/* Top Menu logo  */
+
+
+
+
+.logo img {
+
+  height: 3.5rem;
+  width: auto;
+
+}
+
+.logo p {
+
+  font-size: 0.7rem;
+
+}
+
+
+
+
+
+
+/* Icons */
+
+.new-info-1 i {
+  margin-left: 4.5px;
+  vertical-align: middle;
+  color: rgb(102, 102, 102);
+
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 1);
+}
+
+.material-icons.md-light {
+  color: rgba(0, 0, 0, .7);
+}

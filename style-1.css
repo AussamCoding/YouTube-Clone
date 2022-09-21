@@ -1,0 +1,72 @@
+.heading-3 {
+  position: fixed;
+  background-color: rgba(255, 255, 255);
+  bottom: 0;
+  width: 100vw;
+  height: 5rem;
+  z-index: 10;
+  border-top: 2px solid rgb(205, 205, 205);
+  display: none;
+}
+
+
+.navbar-3 {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-shrink: 0;
+
+}
+
+
+.navbar-3 .sp-color {
+  color: black;
+}
+
+
+
+.navbar-3 .nav-link-3 {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-content: center;
+  align-items: center;
+  color: black;
+
+}
+
+
+.navbar-3 li:first-child {
+  margin-left: -2rem;
+}
+
+
+
+
+
+
+
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 1);
+}
+
+.material-icons.md-light {
+  color: rgba(0, 0, 0, .7);
+}
